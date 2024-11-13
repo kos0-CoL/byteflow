@@ -1,0 +1,183 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #003366, #005f9e);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.header-vectors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path/to/your/vector.svg'); /* Ruta de la imagen vectorial */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#about {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px auto;
+}
+
+#projects {
+    background-color: #eef3f6;
+    padding: 40px;
+}
+
+h2 {
+    color: #005f9e;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+ 
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card a {
+    color: #003366;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+#contact {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #005f9e;
+    box-shadow: 0 0 5px rgba(0, 95, 158, 0.2);
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #005f9e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004070;
+}
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+.text-container {
+    max-width: 400px;
+}
+
+.text-box {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.text-box.expanded {
+    white-space: normal; /* Permite que el texto se expanda */
+    overflow: visible;
+}

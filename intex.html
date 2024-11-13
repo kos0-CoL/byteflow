@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteFlow - Creación de Webs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js"></script> 
+    
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v21.0"></script>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <h1>ByteFlow</h1>
+            <p>Tu puerta al desarrollo web eficiente y de calidad.</p>
+        </div>
+        <div class="header-vectors">
+            <!-- Insertar vectores SVG o imágenes decorativas -->
+        </div>
+    </header>
+
+    <!-- Información básica -->
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <p>En ByteFlow,creemos en el proyecto de democratizar el acceso a herramientas de alta calidad, independientemente de la experiencia técnica o de diseño del usuario..</p>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects">
+        <h2>Proyectos Desarrollados</h2>
+        <div class="project-gallery">
+            <div class="project-card">
+                <a href="https://curriculumsonline.netlify.app/" target="_blank">Curriculum Online</a>
+                <p>Este proyecto web ofrece a los usuarios una plataforma gratuita para crear currículums de forma rápida, intuitiva y profesional. Con una interfaz amigable, permite personalizar el diseño, colores y secciones de cada currículum para adaptarlo a diferentes industrias y estilos personales. Los usuarios pueden elegir entre plantillas prediseñadas, que han sido desarrolladas por expertos en diseño, y personalizar cada campo con su información profesional, experiencia laboral, habilidades, y educación. Una vez completado, el currículum puede descargarse en formato PDF listo para compartir o imprimir.
+
+                  </p>
+                
+            </div>
+            
+            <div class="project-card">
+                <a href="https://ejemplo2.com" target="_blank">Proyecto 2</a>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+            <!-- Más proyectos -->
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact">
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¿Tienes un proyecto en mente? Escríbenos y hagamos realidad tus ideas.</p>
+            <form id="contact-form" action="send_email.php" method="POST">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo" required>
+                <textarea name="message" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        
+            <div class="fb-comments" data-href="thttps://curriculumsonline.netlify.app/" data-width="400" data-numposts="5"></div>
+    </section>
+    <div class="fb-comments" data-href="thttps://curriculumsonline.netlify.app/" data-width="400" data-numposts="5"></div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ByteFlow. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
